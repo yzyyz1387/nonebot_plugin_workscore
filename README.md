@@ -9,7 +9,8 @@
 _✨ NoneBot2 工作性价比计算插件 ✨_
 
 </div>
-
+算法来自知乎，可自行百度
+计算结果仅供参考
 
 ## 安装💿
 `pip install nonebot-plugin-workscore`
