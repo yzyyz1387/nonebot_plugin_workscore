@@ -36,7 +36,7 @@ workareadict={'1':'1.5','2':'1.2','3':'1','4':'0.8'}
 
 
 
-ces = on_command("workscore",aliases={"算性价比","性价比计算器","工作性价比"},rule=to_me())
+ces = on_command("workscore",aliases={"算性价比","性价比计算器","工作性价比","计算性价比"},rule=to_me())
 
 @ces.args_parser
 async def parse(bot: Bot, event: Event, state: T_State):
@@ -93,7 +93,7 @@ async def get_1(bot:Bot,event:MessageEvent,state:T_State):
         state["month"] = str(event.get_message())
 
 @ces.got("musttime", prompt="""额定工作时长（小时\天）？
-请回复0-15的数字
+请回复0-15的整数
 （回复数字）
     """)
 async def get_3(bot:Bot,event:MessageEvent,state:T_State):
@@ -105,6 +105,7 @@ async def get_3(bot:Bot,event:MessageEvent,state:T_State):
 
 @ces.got("gowork",prompt="""总通勤时长(小时\天)？
 回复通勤小时数
+[0,1,2,3,4]
 （回复数字）
 """)
 async def get_4(bot:Bot,event:MessageEvent,state:T_State):
@@ -240,7 +241,14 @@ async def get_12(bot:Bot,event:MessageEvent,state:T_State):
             'data':{
                 'file':f'file:///{path}'
             }
-        }
+        },
+        {
+            'type': 'text',
+            'data': {
+                'text': "发送 /work? 可查看具体算法哟 :)"
+            }
+
+        },
     ]
     await bot.send(
             event=event,
@@ -248,7 +256,22 @@ async def get_12(bot:Bot,event:MessageEvent,state:T_State):
             at_sender=True
         )
 
-
+howto=on_command("howtowork",aliases={"/work？","/work?"},priority=2)
+@howto.handle()
+async def how_(bot:Bot,event:MessageEvent,state:T_State):
+    rely=[{
+        "type":"image",
+        "data":{
+            "file":"https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/workscore1.jpg"
+        }
+    },{
+        "type": "image",
+        "data": {
+            "file": "https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/workscore2.jpg"
+        }
+    }]
+    await bot.send(event=event,
+                   message=rely,at_sender=True)
 
 
 # async def arg_handle(bot: Bot, event: Event, state: T_State):
@@ -268,8 +291,14 @@ async def get_12(bot:Bot,event:MessageEvent,state:T_State):
 
 
 __usage__ = """
-发送
+@我发送
     算性价比
+    性价比计算器
+    工作性价比
+    计算性价比
+查看算法
+    /work?
+    /work？
 
 中途退出请发送
   算了/取消
