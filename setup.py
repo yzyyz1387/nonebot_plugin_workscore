@@ -5,7 +5,7 @@ with open("README.md", "r",encoding="utf-8",errors="ignore") as fh:
 
 setuptools.setup(
     name="nonebot_plugin_workscore",
-    version="0.0.6",
+    version="0.0.7",
     author="yzyyz1387",
     author_email="youzyyz1384@qq.com",
     keywords=("pip", "nonebot2", "nonebot", "itnews", "nonebot_plugin"),
@@ -21,7 +21,7 @@ setuptools.setup(
     ],
     include_package_data=True,
     platforms="any",
-    install_requires=["requests",'nonebot-adapter-onebot>=2.0.0-beta.1,<3.0.0', 'nonebot2>=2.0.0-beta.1,<3.0.0']
+    install_requires=["requests",'nonebot-adapter-cqhttp<=2.0.0-alpha.16', 'nonebot2<=2.0.0-alpha.1']
 )
 
 

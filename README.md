@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# 工作性价比计算器📱
+# 工作性价比计算器📱 (alpha only)
 
 _✨ NoneBot2 工作性价比计算插件 ✨_
 
@@ -20,9 +20,7 @@ _✨ NoneBot2 工作性价比计算插件 ✨_
 在**bot.py** 导入，语句：
 `nonebot.load_plugin("nonebot_plugin_workscore")`
 
-## 更新
 
-0.0.6 b1适配
 
 ## 目录结构📂
 
