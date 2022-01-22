@@ -20,6 +20,10 @@ _✨ NoneBot2 工作性价比计算插件 ✨_
 在**bot.py** 导入，语句：
 `nonebot.load_plugin("nonebot_plugin_workscore")`
 
+## 更新
+
+0.0.6 b1适配
+
 ## 目录结构📂
 
 初次使用时会创建`resource`并下载资源文件至`resource`下
@@ -50,7 +54,6 @@ _✨ NoneBot2 工作性价比计算插件 ✨_
 ## 截图🖼
 
 ![](https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/nonebot_plugin_workscore.jpg)
-
 
 
 
