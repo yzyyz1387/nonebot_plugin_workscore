@@ -14,7 +14,6 @@ from nonebot.rule import to_me
 import requests
 
 monthlist=["3","4","6","8","10","20","30","50","70","100","150"]
-
 goworklist=['1','2','3','4','5']
 moyulist=['1','2','3','4','5']
 degreelist=['1','2','3','4','5','6','7']
