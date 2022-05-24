@@ -7,7 +7,7 @@
   
 **你的star是我的动力**  
 **↓**  
-<img src="https://img.shields.io/github/stars/yzyyz1387/nonebot_plugin_workscor.svg?style=social">  
+<img src="https://img.shields.io/github/stars/yzyyz1387/nonebot_plugin_workscore.svg?style=social">  
 
 # 工作性价比计算器📱 (alpha only)
 
@@ -29,14 +29,14 @@ _✨ NoneBot2 工作性价比计算插件 ✨_
 
 ## 目录结构📂
 
-初次使用时会创建`resource`并下载资源文件至`resource`下
 ```
-├─resource
+├─imgs
 ├   └─shuang.png.
 ├   └─shaungboom.png
 ├   └─yiban.png
 ├   └─cjrh.jpg
-├   └─hencan.png
+├   └─1.jpg
+├   └─2.jpg
 ├─__init__.py
 
 ```
