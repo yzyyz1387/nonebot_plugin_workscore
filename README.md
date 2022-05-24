@@ -7,7 +7,7 @@
   
 **你的star是我的动力**  
 **↓**  
-<img src="https://img.shields.io/github/stars/yzyyz1387/nonebot_plugin_workscor.svg?style=social">  
+<img src="https://img.shields.io/github/stars/yzyyz1387/nonebot_plugin_workscore.svg?style=social">  
 
 # 工作性价比计算器📱 (alpha only)
 
