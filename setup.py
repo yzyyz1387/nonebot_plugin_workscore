@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as fh:
 
 setuptools.setup(
     name="nonebot_plugin_workscore",
-    version="0.0.8",
+    version="0.0.9",
     author="yzyyz1387",
     author_email="youzyyz1384@qq.com",
     keywords=("pip", "nonebot2", "nonebot", "workscore", "nonebot_plugin"),
