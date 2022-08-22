@@ -40,7 +40,7 @@ rightdict = {'1': '1', '2': '1.05', '3': '1.1', '4': '1.15'}
 eightdict = {'是': '0.95', '否': '1'}
 workareadict = {'1': '1.5', '2': '1'
                                  '.2', '3': '1', '4': '0.8'}
-local = dirname(__file__) + "/imgs/"
+local = dirname(__file__) + "/resource/"
 
 
 
