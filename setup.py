@@ -22,5 +22,5 @@ setuptools.setup(
     ],
     include_package_data=True,
     platforms="any",
-    install_requires=["requests", 'nonebot-adapter-onebot>=2.0.0-beta.1', 'nonebot2>=2.0.0-beta.1']
+    install_requires=["requests", 'nonebot-adapter-onebot>=2.0.0-beta.1', 'nonebot2>=2.0.0-beta.1', 'httpx']
 )

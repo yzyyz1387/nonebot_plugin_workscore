@@ -1,3 +1,4 @@
 nonebot-adapter-onebot>=2.0.0-beta.1
 nonebot2>=2.0.0-beta.1
 setuptools
+httpx
