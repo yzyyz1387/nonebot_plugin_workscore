@@ -19,6 +19,17 @@ from nonebot.rule import to_me
 from nonebot.typing import T_State
 from pathlib import Path
 
+from nonebot.plugin import PluginMetadata
+__plugin_meta__ = PluginMetadata(
+    name="工作性价比计算器",
+    description="工作性价比计算器，算算你有多惨",
+    usage="",
+    type="application",
+    homepage="https://github.com/yzyyz1387/nonebot_plugin_workscore",
+    supported_adapters=None,
+)
+
+
 monthlist = ["3", "4", "6", "8", "10", "20", "30", "50", "70", "100", "150"]
 goworklist = ['1', '2', '3', '4', '5']
 moyulist = ['1', '2', '3', '4', '5']
